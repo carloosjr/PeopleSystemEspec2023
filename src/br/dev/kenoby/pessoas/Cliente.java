@@ -18,5 +18,12 @@ public class Cliente extends Pessoa {
 		Profissao = profissao;
 	}
 	
-	
+	public void cadastrar(String codigo, String profissao, String nome, String dataNascimento, String endereco, String telsContato) {
+		this.codigo = codigo;
+		this.Profissao = profissao;
+		setNome(nome);
+		setDataNascimento(dataNascimento);
+		setEndereco(endereco);
+		setTelsContato(telsContato);
+	}
 }

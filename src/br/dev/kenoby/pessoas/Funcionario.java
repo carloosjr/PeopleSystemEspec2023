@@ -1,6 +1,6 @@
 package br.dev.kenoby.pessoas;
 
-public class Funcionario {
+public class Funcionario extends Pessoa{
 	private int matricula;
 	private String cargo;
 	private double salario;
@@ -13,8 +13,18 @@ public class Funcionario {
 	public void promover(String novoCargo) {
 		this.cargo = novoCargo;
 	}
-	
 
+	public void cadastrar(int matricula, String cargo, double salario, String dataAdmissao, String nome, String dataNascimento, String endereco, String telsContato) {
+		this.matricula = matricula;
+		this.cargo = cargo;
+		this.salario = salario;
+		this.dataAdmissao = dataAdmissao;
+		setNome(nome);
+		setDataNascimento(dataNascimento);
+		setEndereco(endereco);
+		setTelsContato(telsContato);		
+	}
+	
 	public int getMatricula() {
 		return matricula;
 	}
@@ -38,5 +48,6 @@ public class Funcionario {
 	public double getSalario() {
 		return salario;
 	}
+	
 	
 }

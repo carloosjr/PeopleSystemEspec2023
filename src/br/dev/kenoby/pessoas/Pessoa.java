@@ -8,10 +8,12 @@ public class Pessoa {
 	private String dataNascimento;
 	private String endereco;
 	private String telsContato;
-	private String cargo;
-	
-	public void cadastrar () {
-		
+
+	public void cadastrar (String nome, String dataNascimento, String endereco, String telsContato) {
+		this.nome = nome;
+		this.dataNascimento = dataNascimento;
+		this.endereco = endereco;
+		this.telsContato = telsContato;
 	}
 	
 	public int obterIdade() {
@@ -21,9 +23,49 @@ public class Pessoa {
 		System.out.println("Informe seu ano de nascimento:");
         int idade = entrada.nextInt();
         entrada.close();
-		return idade;
-		
+		return idade;		
 	}
+
+	public int getMatricula() {
+		return matricula;
+	}
+
+	public void setMatricula(int matricula) {
+		this.matricula = matricula;
+	}
+
+	public String getNome() {
+		return nome;
+	}
+
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
+
+	public String getDataNascimento() {
+		return dataNascimento;
+	}
+
+	public void setDataNascimento(String dataNascimento) {
+		this.dataNascimento = dataNascimento;
+	}
+
+	public String getEndereco() {
+		return endereco;
+	}
+
+	public void setEndereco(String endereco) {
+		this.endereco = endereco;
+	}
+
+	public String getTelsContato() {
+		return telsContato;
+	}
+
+	public void setTelsContato(String telsContato) {
+		this.telsContato = telsContato;
+	}
+	
 	
 }
 
