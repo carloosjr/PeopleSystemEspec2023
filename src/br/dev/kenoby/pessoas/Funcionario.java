@@ -1,5 +1,8 @@
 package br.dev.kenoby.pessoas;
 
+import br.dev.kenoby.Telefone.Telefone;
+import br.dev.kenoby.endereco.Endereco;
+
 public class Funcionario extends Pessoa{
 	private int matricula;
 	private String cargo;
@@ -14,7 +17,7 @@ public class Funcionario extends Pessoa{
 		this.cargo = novoCargo;
 	}
 
-	public void cadastrar(int matricula, String cargo, double salario, String dataAdmissao, String nome, String dataNascimento, String endereco, String telsContato) {
+	public void cadastrar(int matricula, String cargo, double salario, String dataAdmissao, String nome, String dataNascimento, Endereco endereco, Telefone telsContato) {
 		this.matricula = matricula;
 		this.cargo = cargo;
 		this.salario = salario;

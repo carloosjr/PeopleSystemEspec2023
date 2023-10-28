@@ -1,5 +1,8 @@
 package br.dev.kenoby.pessoas;
 
+import br.dev.kenoby.Telefone.Telefone;
+import br.dev.kenoby.endereco.Endereco;
+
 public class Cliente extends Pessoa {
 	private String codigo;
 	private String Profissao;
@@ -18,7 +21,7 @@ public class Cliente extends Pessoa {
 		Profissao = profissao;
 	}
 	
-	public void cadastrar(String codigo, String profissao, String nome, String dataNascimento, String endereco, String telsContato) {
+	public void cadastrar(String codigo, String profissao, String nome, String dataNascimento, Endereco endereco, Telefone telsContato) {
 		this.codigo = codigo;
 		this.Profissao = profissao;
 		setNome(nome);

@@ -1,15 +1,18 @@
 package br.dev.kenoby.pessoas;
 
+import br.dev.kenoby.Telefone.Telefone;
+import br.dev.kenoby.endereco.Endereco;
+
 import java.util.Scanner;
 
 public class Pessoa {
 	private int matricula;
 	private String nome;
 	private String dataNascimento;
-	private String endereco;
-	private String telsContato;
+	private Endereco endereco;
+	private Telefone telsContato;
 
-	public void cadastrar (String nome, String dataNascimento, String endereco, String telsContato) {
+	public void cadastrar (String nome, String dataNascimento, Endereco endereco, Telefone telsContato) {
 		this.nome = nome;
 		this.dataNascimento = dataNascimento;
 		this.endereco = endereco;
@@ -50,19 +53,19 @@ public class Pessoa {
 		this.dataNascimento = dataNascimento;
 	}
 
-	public String getEndereco() {
+	public Endereco getEndereco() {
 		return endereco;
 	}
 
-	public void setEndereco(String endereco) {
+	public void setEndereco(Endereco endereco) {
 		this.endereco = endereco;
 	}
 
-	public String getTelsContato() {
+	public Telefone getTelsContato() {
 		return telsContato;
 	}
 
-	public void setTelsContato(String telsContato) {
+	public void setTelsContato(Telefone telsContato) {
 		this.telsContato = telsContato;
 	}
 	
