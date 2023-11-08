@@ -8,7 +8,7 @@ public class Endereco {
     private String estado;
     private String pais;
 
-    public void cadastrarEndereco()
+    public void cadastrarEndereco(){}
 
     public String getRua() {
         return rua;

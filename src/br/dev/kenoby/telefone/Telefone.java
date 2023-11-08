@@ -1,4 +1,4 @@
-package br.dev.kenoby.Telefone;
+package br.dev.kenoby.telefone;
 
 public class Telefone {
     private String codigoPais;
