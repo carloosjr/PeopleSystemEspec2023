@@ -1,9 +1,12 @@
 package br.dev.kenoby.appMain;
 
+//Importando tudo do pacote pessoas
 import br.dev.kenoby.pessoas.*;
 
+//Onde será chamada a aplicação
 public class AppMain {
     public static void main(String[] args) {
+//Instanciando os objetos
         Pessoa objNovaPessoa = new Pessoa();
         Funcionario objNovoFuncionario = new Funcionario();
         Cliente objNovoCliente = new Cliente();

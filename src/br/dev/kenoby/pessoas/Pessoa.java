@@ -1,14 +1,14 @@
 package br.dev.kenoby.pessoas;
 
 import br.dev.kenoby.Telefone.Telefone;
-import br.dev.kenoby.endereco.Endereco;
-
+import br.dev.kenoby.Endereco.Endereco;
 import java.util.Scanner;
 
 public class Pessoa {
 	private int matricula;
 	private String nome;
 	private String dataNascimento;
+	//Utilizando composição
 	private Endereco endereco;
 	private Telefone telsContato;
 
@@ -21,10 +21,13 @@ public class Pessoa {
 	
 	public int obterIdade() {
 		//Subtrair ano atual do ano de nascimento
-		
+
+		//Instânciando o objeto entrada
 		Scanner entrada = new Scanner(System.in);
 		System.out.println("Informe seu ano de nascimento:");
+		//Realizando conversão da entrada para um Int
         int idade = entrada.nextInt();
+		//Finalizando o objeto entrada
         entrada.close();
 		return idade;		
 	}
