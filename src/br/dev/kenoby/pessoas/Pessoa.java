@@ -3,7 +3,8 @@ package br.dev.kenoby.pessoas;
 import br.dev.kenoby.telefone.Telefone;
 import br.dev.kenoby.endereco.Endereco;
 
-import java.util.Scanner;
+import java.time.LocalDate;
+
 
 public class Pessoa {
 	private int matricula;
@@ -21,16 +22,8 @@ public class Pessoa {
 	}
 	
 	public int obterIdade() {
-		//Subtrair ano atual do ano de nascimento
-
-		//Instânciando o objeto entrada
-		Scanner entrada = new Scanner(System.in);
-		System.out.println("Informe seu ano de nascimento:");
-		//Realizando conversão da entrada para um Int
-        int idade = entrada.nextInt();
-		//Finalizando o objeto entrada
-        entrada.close();
-		return idade;		
+		int anoAtual = LocalDate.now().getYear();
+        return anoAtual - Integer.parseInt(dataNascimento);
 	}
 
 	public int getMatricula() {

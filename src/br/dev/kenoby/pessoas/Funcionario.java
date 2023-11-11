@@ -10,7 +10,7 @@ public class Funcionario extends Pessoa{
 	private String dataAdmissao;
 	
 	public void reajustarSalario(double percentual) {
-		this.salario = this.salario * percentual;
+        this.salario = (salario * (percentual/100)) + salario;
 	}
 	
 	public void promover(String novoCargo) {
@@ -27,10 +27,7 @@ public class Funcionario extends Pessoa{
 		setEndereco(endereco);
 		setTelsContato(telsContato);		
 	}
-	
-	public int getMatricula() {
-		return matricula;
-	}
+
 
 	public void setMatricula(int matricula) {
 		this.matricula = matricula;
