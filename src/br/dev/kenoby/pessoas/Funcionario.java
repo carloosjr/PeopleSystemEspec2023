@@ -2,10 +2,11 @@ package br.dev.kenoby.pessoas;
 
 import br.dev.kenoby.telefone.Telefone;
 import br.dev.kenoby.endereco.Endereco;
+import br.dev.kenoby.cargo.Cargo;
 
 public class Funcionario extends Pessoa{
 	private int matricula;
-	private String cargo;
+	private Cargo cargo;
 	private double salario;
 	private String dataAdmissao;
 	
@@ -13,11 +14,11 @@ public class Funcionario extends Pessoa{
         this.salario = (salario * (percentual/100)) + salario;
 	}
 	
-	public void promover(String novoCargo) {
+	public void promover(Cargo novoCargo) {
 		this.cargo = novoCargo;
 	}
 
-	public void cadastrar(int matricula, String cargo, double salario, String dataAdmissao, String nome, String dataNascimento, Endereco endereco, Telefone telsContato) {
+	public void cadastrar(int matricula, Cargo cargo, double salario, String dataAdmissao, String nome, String dataNascimento, Endereco endereco, Telefone telsContato) {
 		this.matricula = matricula;
 		this.cargo = cargo;
 		this.salario = salario;
@@ -41,7 +42,7 @@ public class Funcionario extends Pessoa{
 		this.dataAdmissao = dataAdmissao;
 	}
 
-	public String getCargo() {
+	public Cargo getCargo() {
 		return cargo;
 	}
 
