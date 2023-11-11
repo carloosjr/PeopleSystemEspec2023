@@ -1,13 +1,12 @@
 package br.dev.kenoby.pessoas;
 
-import br.dev.kenoby.Telefone.Telefone;
+import br.dev.kenoby.telefone.Telefone;
 import br.dev.kenoby.endereco.Endereco;
 
 public class Cliente extends Pessoa {
 	private String codigo;
 	private String Profissao;
-	
-	
+
 	public String getCodigo() {
 		return codigo;
 	}

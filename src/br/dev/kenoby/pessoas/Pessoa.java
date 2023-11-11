@@ -1,7 +1,8 @@
 package br.dev.kenoby.pessoas;
 
-import br.dev.kenoby.Telefone.Telefone;
-import br.dev.kenoby.Endereco.Endereco;
+import br.dev.kenoby.telefone.Telefone;
+import br.dev.kenoby.endereco.Endereco;
+
 import java.util.Scanner;
 
 public class Pessoa {
